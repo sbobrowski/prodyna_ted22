@@ -37,3 +37,27 @@ package prodyna.ted22.exercises.ex4
  */
 
 fun main() = MyTurtleGame().createTurtles()
+
+sealed class Status
+
+object OK : Status() {
+    fun print() = println("Im OK")
+}
+object WAITING : Status()
+
+object NOTOK : Status() {
+        var why: String = "WHYWHY"
+
+}
+
+
+class ERROR(var cause: String) : Status()
+
+
+fun test(status: Status) : String =
+    when(status) {
+        is OK -> "OK"
+        is WAITING -> "Waiting"
+        is ERROR -> "${status.cause}"
+        else -> ""
+    }

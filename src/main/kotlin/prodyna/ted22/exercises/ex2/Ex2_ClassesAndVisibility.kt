@@ -31,7 +31,7 @@ package prodyna.ted22.exercises.ex2
 	- Create a class MyTurtleGame with a function creating two turtles
 	- Add an class attribute "config" to MyTurtleGame with initial value and private setter
 	- Print the current config in createTurtles function
-	- Add an secondary constructor only with name, setting other attributes to default values (you must call primary constructor from it)
+	- Add an secondary constructor to Turtle only with name, setting other attributes to default values (you must call primary constructor from it)
 	- Create a third turtle in createTurtles with the secondary constructor
 	- Create a main method (outside the class bodies) calling createTurtles
 

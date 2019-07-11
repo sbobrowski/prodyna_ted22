@@ -14,3 +14,18 @@ package prodyna.ted22.exercises.ex1
 */
 
 // Start here (class body not needed in Kotlin, just start with 'fun ...', because let's have fun ;) )
+
+fun isPositiveOrNegative(number: Int) {
+    println(
+        if(number>0) "$number is positive" else "$number is negative"
+    )
+}
+
+fun getMax(number1: Long, number2: Long) : Long = if(number1>number2) number1 else number2
+
+fun main() {
+    isPositiveOrNegative(2)
+    isPositiveOrNegative(-2)
+
+    println(getMax(2,7))
+}

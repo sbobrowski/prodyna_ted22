@@ -15,7 +15,7 @@ package prodyna.ted22.exercises.ex3
 
     - Make the description a nullable type (add a ? after String)
     - Add an interface Animal (no methods / attributes needed for this step)
-    - Add new data class Cst with attributes 'shortHair: Boolean' and 'name: String'
+    - Add new data class Cat with attributes 'shortHair: Boolean' and 'name: String'
     - Let Turtle and Cat implement Animal (just use : instead of 'implements' in Java)
     - Add nullable Animal attribute to your Turtle class with name 'friend'.
         - Use val instead of var to make the attribute immutable
@@ -29,4 +29,21 @@ package prodyna.ted22.exercises.ex3
 
  */
 
-fun main() = MyTurtleGame().createTurtles()
+fun main() = test("fer")
+
+
+
+fun test(s: Any) {
+    if(s !is String) return
+
+    println(s.length)
+}
+
+interface FooBarInterface {
+    fun test(foo: String) = println(foo)
+}
+
+
+
+
+
