@@ -31,3 +31,16 @@ package prodyna.ted22.exercises.ex5
  */
 
 fun main() = MyTurtleGame().createTurtles()
+
+//fun main() = test()
+
+fun test() {
+    val myList = mutableListOf("test1", "test2")
+    myList.add("test3")
+
+    val lengthList = myList.map { it.length }
+
+
+}
+
+fun fakul(factor: Int) = (1..factor).reduce{x,y -> x*y}
