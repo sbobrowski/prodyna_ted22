@@ -41,3 +41,21 @@ package prodyna.ted22.exercises.ex6
  */
 
 fun main() = MyTurtleGame().createTurtles()
+
+fun String.isEmpty() = this == ""
+
+data class Outer(var outerName: String, var inner: Inner? = null)
+
+data class Inner(var innerName: String = "Default inner name")
+
+fun Outer.inner(block: Inner.() -> Unit) {
+    var myInner = Inner()
+    block(myInner)
+    inner = myInner
+}
+
+var myOuter = Outer("MyOuter").inner {
+    innerName = "MyInnerName"
+}
+
+

@@ -49,4 +49,22 @@ package prodyna.ted22.exercises.ex7
         - Choose one of your turtles and call multiple functions in a row on it
  */
 
-fun main() = MyTurtleGame().createTurtles()
+//fun main() = MyTurtleGame().createTurtles()
+
+fun main() {
+    var s = "My Original String"
+
+    s.also {
+        println("Original: $it")
+        it.reversed()
+    }.also {
+        println("Reversed: $it")
+        it.length
+    }.also {
+        println("length: $it")
+    }
+
+    var x = 5
+
+    println(x.also {x++} * x)
+}
